@@ -21,6 +21,7 @@ public class RSSFeedParser {
     static final String LANGUAGE = "language";
     static final String COPYRIGHT = "copyright";
     static final String LINK = "link";
+
     static final String AUTHOR = "author";
     static final String ITEM = "item";
     static final String PUB_DATE = "pubDate";
@@ -72,8 +73,8 @@ public class RSSFeedParser {
                             break;
                         case DESCRIPTION:
 
-                            //description = getCharacterData(event, eventReader);
-                            description=getDescription();
+                            description = getCharacterData(event, eventReader);
+//                            description=getDescription();
                             break;
                         case LINK:
                             link = getCharacterData(event, eventReader);

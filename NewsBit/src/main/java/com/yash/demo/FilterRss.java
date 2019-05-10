@@ -24,7 +24,7 @@ public class FilterRss extends FeedMessage {
 
 
 
-            return
+            return null;
         }
 
 
